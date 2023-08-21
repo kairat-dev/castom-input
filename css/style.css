@@ -1,0 +1,35 @@
+.castom_lbl {
+    position: relative;
+    display: inline-block;
+    background-color: #2c62bd;
+    width: 40px;
+    height: 20px;
+    border-radius: 12px;
+    box-shadow: inset 0px 0px 4px 0 #989898;
+    transition: .6s;
+}
+.castom_lbl::before {
+    content: "";
+    position:absolute;
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: auto 0;
+    top: 0;
+    bottom: 0;
+    left: 3px;
+    transition: .6s;
+}
+/* .castom_lbl:hover::before{
+    left: 20px;
+}
+.castom_lbl:hover {
+    background-color: rgb(33, 100, 33);
+} */
+.castop_imp:checked + .castom_lbl {
+    background-color: rgb(33, 100, 33);   
+}
+.castop_imp:checked + .castom_lbl::before {
+    left: 20px;
+}
